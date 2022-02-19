@@ -8,7 +8,6 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
  width: 100%;
-  background-color: #f2f2f2;
 }
 
 .header {
@@ -16,8 +15,9 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
-  border: 1px solid black;
   display: flex;
+  background-color: #f2f2f2;
+  position: relative;
 }
 .logo{
 
@@ -75,6 +75,7 @@
   right: 0;
   top: 64px;
   z-index: 1;
+  box-sizing: border-box;
   /*решить проблему с квадратом*/
 }
 
@@ -90,7 +91,7 @@
   
 }
 
-.description__two-columns_brief{
+.description__brief{
   margin: 0;
   width: 175px;
   line-height: 1.2;
@@ -99,7 +100,7 @@
   color:  #2f80ed;
 }
 
-.description__two-columns_main-text{
+.description__main-text{
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -107,17 +108,69 @@
   gap: 30px;
 }
 
-.description__two-columns_paragraph{
+.description__paragraph{
   margin: 0;
   padding: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
-.description__two-columns_span-accent{
+.description__span-accent{
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
+}
+
+.digits{
+
+}
+
+.digits__section-title{
+width: 60%;
+margin: 100px auto 20px auto;
+text-align: center;
+line-height: 1.15;
+font-size: 60px;
+font-weight: 600;
+}
+
+.digits__siction-subtitle{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.digits__table{
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 auto 100px auto;
+}
+
+.digits__cell{
+  width: 250px;
+  list-style: none;
+  margin-top: 60px;
+}
+
+.digits__heading{
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.digits__text{
+  margin: 0;
+  margin-top: 20px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
 }
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
