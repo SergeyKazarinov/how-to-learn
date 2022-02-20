@@ -18,6 +18,7 @@
   display: flex;
   background-color: #f2f2f2;
   position: relative;
+  overflow: hidden;
 }
 .logo{
 
@@ -76,22 +77,23 @@
   top: 64px;
   z-index: 1;
   box-sizing: border-box;
-  /*решить проблему с квадратом*/
 }
 
 .description{
   display: flex;
   justify-content: center; 
+border: 1px solid red;
+margin: 100px 0;
 }
-.description__two-columns{
+
+.two-columns{
   display: flex;
   justify-content: space-between;
   width: 80%;
-  margin: 100px 0;
-  
+
 }
 
-.description__brief{
+.two-columns__brief{
   margin: 0;
   width: 175px;
   line-height: 1.2;
@@ -100,7 +102,7 @@
   color:  #2f80ed;
 }
 
-.description__main-text{
+.two-columns__main-text{
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -108,33 +110,35 @@
   gap: 30px;
 }
 
-.description__paragraph{
+.two-columns__paragraph{
   margin: 0;
   padding: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
-.description__span-accent{
+.two-columns__span-accent{
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
 }
 
 .digits{
+  border: 1px solid red;
+  margin-bottom: 100px;
 
 }
 
-.digits__section-title{
+.section-title{
 width: 60%;
-margin: 100px auto 20px auto;
+margin: 0 auto 20px auto;
 text-align: center;
 line-height: 1.15;
 font-size: 60px;
 font-weight: 600;
 }
 
-.digits__siction-subtitle{
+.siction-subtitle{
   width: 60%;
   margin: 0 auto;
   text-align: center;
@@ -143,29 +147,29 @@ font-weight: 600;
   font-weight: normal;
 }
 
-.digits__table{
+.table{
   width: 1100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
-  margin: 0 auto 100px auto;
+  margin: 0 auto;
 }
 
-.digits__cell{
+.table__cell{
   width: 250px;
   list-style: none;
   margin-top: 60px;
 }
 
-.digits__heading{
+.table__heading{
   margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
 }
 
-.digits__text{
+.table__text{
   margin: 0;
   margin-top: 20px;
   line-height: 1.2;
@@ -180,7 +184,10 @@ font-weight: 600;
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: 867px 637px;
+  background-color: #f2f2f2;
+  border: 1px solid red;
 }
+
 .feynman__title {
   width: 648px;
   text-align: center;
@@ -189,12 +196,14 @@ font-weight: 600;
   font-size: 120px;
   font-weight: 600;
 }
+
 .feynman__subtitile {
   text-align: center;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
 }
+
 .heynman__link {
   position: absolute;
   top: 50%;
@@ -204,10 +213,108 @@ font-weight: 600;
   font-weight: normal;
 }
 
+.kaufman{
+  background-color: #1f1f1f;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid red;
+  padding: 90px 0;
+}
+
+.kaufman__triangle{
+  background-image: url("/images/kaufman-triangle.svg");
+  position: absolute;
+  width: 877px;
+  height: 877px;
+  right: -210px;
+  top: 0;
+  z-index: 1;
+}
+
+.section-title_theme_dark{
+  margin: 0 auto 20px auto;
+  color: white;
+  z-index: 2;
+}
+
+.siction-subtitle_theme_dark{
+  color: white;
+  z-index: 3;
+}
+
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  z-index: 4;
+}
+/*
+.table_theme_dark{
+}*/
+
+.footer{
+  background-color:  #1f1f1f;
+  min-height: 350px;
+  display: flex;
+}
+
+.footer__columns{
+  margin: 60px auto 40px auto;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.footer__column{
+  display: flex;
+  flex-direction: column;
+} 
+
+.footer__column_content_copright{
+  justify-content: space-between;
+  flex-basis: 711px;
+}
+
+.logo_place_footer{
+  width: 183px;
+  height: 35px;
+}
+
+.footer__autor{
+  color: white;
+  margin: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+}
+/*
+.footer__column_content_info{
+}*/
+
+.footer__column-heading{
+  color: white;
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.footer__social-links{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footer__column-link{
+  display: flex;
+  color: white;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.footer__social-icon{
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }
