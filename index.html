@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./pages/index.css">
   <title>Научиться учиться</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
     </header>
     <main class="content">
       <section class="description">
-        <div class="two-columns">
+        <article class="two-columns">
           <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
           <div class="two-columns__main-text">
             <p class="two-columns__paragraph">
@@ -40,7 +40,7 @@
             Эти же техники применяются на примере обучения в Практикуме.
             </p>
           </div>
-        </div>
+        </article>
       </section>
 
       <section class="techniques">
@@ -158,15 +158,15 @@
 
       <section class="khan">
         <div class="khan__container">
-          <span class="khan__author">Салман Хан</span>
+          <p class="khan__author">Салман Хан</p>
           <h2 class="khan__title">Весь мир — школа</h2>
-          <p class="khan__quote">
+          <blockquote class="khan__quote">
             Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. 
             Книгу «Весь мир — школа» нужно прочитать всем, 
             кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, 
-            которые приносят успех в школе, карьере и жизни.</p>
-          <span class="khan__quote-author">Джордж Лукас</span>
-          <span class="khan__quote-author-subline">Кинорежиссер, продюсер</span>
+            которые приносят успех в школе, карьере и жизни.</blockquote>
+          <p class="khan__quote-author">Джордж Лукас</p>
+          <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
             <img class="khan__book-pic" src="./images/khan/khan-book.jpg" alt="Обложка книги">
             <a href="#" class="khan__buy-link ">Купить книгу &rarr;</a>
@@ -225,20 +225,28 @@
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-        <div class="resources__logo-zone">
-          <a href="#">
-            <img src="./images/resources/resources-arzamas.svg" alt="Логотип Арзамас" class="resources__logo">
-          </a>
-          <a href="#">
-            <img src="./images/resources/resources-n1.svg" alt="Логотип Н+1" class="resources__logo">
-          </a>
-          <a href="#">
-            <img src="./images/resources/resources-strelka.svg" alt="Логотип Стрелка" class="resources__logo">
-          </a>
-          <a href="#">
-            <img src="./images/resources/resources-polka.svg" alt="Логотип Полка" class="resources__logo">
-          </a>
-        </div>
+        <ul class="resources__logo-zone">
+          <li>
+            <a href="#">
+              <img src="./images/resources/resources-arzamas.svg" alt="Логотип Арзамас" class="resources__logo">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/resources/resources-n1.svg" alt="Логотип Н+1" class="resources__logo">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/resources/resources-strelka.svg" alt="Логотип Стрелка" class="resources__logo">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/resources/resources-polka.svg" alt="Логотип Полка" class="resources__logo">
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
@@ -248,7 +256,7 @@
           <p class="footer__author">&copy; 2019. Виктор Абанькин</p>
         </div>
         <div class="footer__column footer__column_content_info"> 
-          <div class="footer__column-heading">О Практикуме</div>
+          <h3 class="footer__column-heading">О Практикуме</h3>
             <nav class="footer__social-links">
               <ul class="footer__list">
                 <li><a class="footer__column-link" href="#">Главная</a></li>
@@ -258,7 +266,7 @@
             </nav>
           </div>
         <div class="footer__column footer__column_content_social">
-            <div class="footer__column-heading">Соцсети</div>
+            <h3 class="footer__column-heading">Соцсети</h3>
               <nav class="footer__social-links">
                 <ul class="footer__list">
                   <li><a class="footer__column-link" href="https://www.facebook.com/" target="_blank">

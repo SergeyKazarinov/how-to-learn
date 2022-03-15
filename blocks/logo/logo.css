@@ -1,3 +1,14 @@
+@keyframes logo-opacity {
+  from {
+    transform: translate(-50px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
 .logo {
   width: 183px;
 }

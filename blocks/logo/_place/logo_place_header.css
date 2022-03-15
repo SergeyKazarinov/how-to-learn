@@ -4,4 +4,5 @@
   left: 64px;
   height: 32px;
   z-index: 3;
+  animation: header-opacity 3s ease;
 }
