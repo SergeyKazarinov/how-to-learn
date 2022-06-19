@@ -1,12 +1,19 @@
-# How To Learn  
-This project shows the level of my knowledge as a frontend developer.  
-**When creating the project used:**  
+# How To Learn 
+# Проектная работа: "How to learn". Создана в рамках учебы в [Яндекс.Практикум](https://practicum.yandex.ru/) на факультете ["Веб-разработчик"](https://practicum.yandex.ru/web/).  
+
+## Описание:  
+Типовой одностраничный сайт. Он создан в рамках прохождения 2 спринта курса. В работе применены расширенные возможности HTML и CSS.  
+
+## Технологии:  
 *1. Flexbox layout.*  
-*2. Methodology BEM.*  
-*3. File structure BEM Nested.*  
-*4. Inline frame and video-tag.*  
-*5. Animation.*  
-**What is planned to be improved:**  
-*1. Check the code for cross-browser compatibility and add all vendor prefixes.*  
-*2. Add animation.*  
-*3. Create a comment form.*  
+*2. Методология БЭМ.*  
+*3. Файловая структура и пути к файлам (Nested BEM).*  
+*4. Inline frame и видео-теги.*  
+*5. Анимация и keyframes.*  
+*6. GIT.*  
+
+## Что планируется улучшить:  
+*1. проверить код на кроссбраузерность и дописать все вендорные префиксы.*  
+*2. Добавить анимацию.*  
+
+**[Ссылка на проект](https://sergeykazarinov.github.io/how-to-learn/).**
